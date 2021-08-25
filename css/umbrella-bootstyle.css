@@ -1,0 +1,13 @@
+.umbrella-logo {
+    width: 100%;
+}
+
+.main-carousel {
+    /* background-color: green; */
+}
+.return-to-top {
+    border: 1px solid green;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
