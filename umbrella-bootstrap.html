@@ -11,17 +11,19 @@
     <title>GraphicsUmbrella: Bootstrap</title>
 </head>
 <body>
+  <!-- you are so damn dumb. why can't you figure this out??? -->
     <header class="header" id="header">
-        <section class="container top-header">
+        <section class="container-fluid container-md top-header">
             <div class="row">
-                <div class="col-md-4">
-                    <h1 class="logo">
-                        <img src="media/umbrella-logo.png" alt="umbrella-logo"class="img-fluid d-block w-25" >
-                        <p><span id="graphics_word">Graphics</span>Umbrella</p>
-                        <p><span>Premium style free graphics</span></p>
+              <div class="col-2">
+                <img src="media/umbrella-logo.png" alt="umbrella-logo"class="img-fluid d-block w-100" >
+              </div>
+                <div class="col-4 col-lg-4">
+                    <h1 class="logo"> 
+                        <p><span class="graphics_word">Graphics</span>Umbrella<span class="premium"> Premium style free graphics</span></p>
                     </h1>
                 </div>
-                <div class="col-md-8">
+                <div class="col-8">
                     <nav class="top-nav">
                         <ul class="nav justify-content-between nav-list">
                             <li class="nav-item top-nav-item"><a href="#link">home</a></li>
@@ -36,37 +38,28 @@
         </section>
     </header>
     <main class="main" id="main">
-        <section class="container-fluid main-carousel">
-            <!-- i need to have a carousel image here -->
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                <div class="carousel-inner">
-                    <!-- don't forget to add the images necessary for this to work -->
-                  <div class="carousel-item active">
-                    <img src="media/devices.png" class="d-block w-50" alt="device-image">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="media/devices.png" class="d-block w-50" alt="device-image">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="media/devices.png" class="d-block w-50" alt="...">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+      <!-- I am going to try making this without the carousel. maybe that will solve my issues (@line42-remvoved carousel) -->
+        <section class="main-content landing-img">
+          <div class="container-fluid landing-page">
+            <div class="row">
+              <div class="col-6"><img src="media/devices.png" alt="device-page" class="img-fluid"></div>
+              <div class="col-6">
+                <h3 class="lovely-words">add lovely captions to each slide and make your business stand out</h3>
               </div>
+            </div>
+          </div>
         </section>
         <section class="container main-content-level1">
             <div class="row">
                 <div class="col-md-4">
+                  <!-- make proper use of 'span' -->
                     <h2 class="main-content-sub" id="welcome-message">welcome to <span id="elegantica">elegantica</span> - a minimal business theme</h2>
-                    <div class="slider">
+                    <div class="slider"> <!--don't forget to download the proper icons to place in these sliders: recycle, telephone, gear, mobile phone-->
                         <ul class="slider-buttons">
+                          <li class="slider-button"><a href="#link"><img src="media/067-phone.png" alt=""></a></li>
+                          <li class="slider-button"><a href="#link"><img src="media/173-bin.png" alt=""></a></li>
+                          <li class="slider-button"><a href="#link"><img src="media/149-cog.png" alt=""></a></li>
+                          <li class="slider-button"><a href="#link"><img src="media/089-mobile.png" alt=""></a></li>
                         </ul>
                     </div>
                 </div>
@@ -74,8 +67,9 @@
             </div>
         </section>
         <section class="container main-content-level2">
+          <!-- i want these cards to be stacked in a 3x2(2x3??) stack. what do i have to call to make this happen -->
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-4">
                     <h3 class="main-content-sub2">recent from portfolio</h3>
                 </div>
                 <div class="col-md-4">
@@ -152,11 +146,89 @@
                     <div class="col-md-12">
                         <img src="media/advertisers.jpg" alt="advertisers" class="img-fluid">
                     </div>
-                    <div class="return-to-top"></div>
+                    <!-- this is going to serve as my return-to-top slider. i just need to make sure i am not retarded while creating it -->
+                    <div class="return-to-top">
+                      <img src="media/307-arrow-up.png" alt="up-arrow">
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer" id="footer"></footer>
+    <!-- now comes the hard part. this is going to take a lot of frustration -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="about-us">
+              <h3 class="sub-header">little about us</h3>
+              <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quae accusamus explicabo, magni harum consequatur cupiditate pariatur optio debitis corporis!</p>
+            </div>
+            <div class="follow-us">
+              <h3 class="sub-header">a little about us</h3>
+              <ul class="nav justify-content-between nav-social-icon">
+                <li class="social-image"><a href="#link"><img src="media/401-facebook.png" alt="facebook-icon"></a></li>
+                <li class="social-image"><a href="#link"><img src="media/407-twitter.png" alt="twitter-icon"></a></li>
+                <li class="social-image"><a href="#link"><img src="media/412-rss.png" alt="rss-icon"></a></li>
+                <li class="social-image"><a href="#link"><img src="media/417-vimeo.png" alt="vimeo-icon"></a></li>
+                <li class="social-image"><a href="#link"><img src="media/424-dribbble.png" alt="dribble-icon"></a></li>
+                <li class="social-image"><a href="#link"><img src="media/" alt="myspace-icon"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col" id="archive-section">
+            <div class="archives">
+              <h3 class="sub-header">archives</h3>
+              <ul class="archive-dates">
+                <li class="archive-year"><a href="#link">march 2012</a></li>
+                <li class="archive-year"><a href="#link">february 2012</a></li>
+                <li class="archive-year"><a href="#link">january 2012</a></li>
+                <li class="archive-year"><a href="#link">december 2011</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col" id="contact-section">
+            <div class="contact-us">
+              <h3 class="contact-info">contact us</h3>
+              <ul class="information-list">
+                <li class="info email-info"><a href="#link">info@premiumcoding.com</a></li>
+                <li class="info phone-info"><a href="#link">800 769 2222</a></li>
+                <li class="info mobile-info"><a href="#link">123 456 7890</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="newsletter-box">
+              <h3 class="newsletter">sign to newsletter</h3>
+              <form action="text">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="text" name="email" id="email" placeholder="Email">
+                <input type="button" value="subscribe">
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <nav class="bottom-nav">
+              <ul class="nav justify-content-between nav-list">
+                  <li class="nav-item bottom-nav-item"><a href="#link">home</a></li>
+                  <li class="nav-item bottom-nav-item"><a href="#link">portfolio</a></li>
+                  <li class="nav-item bottom-nav-item"><a href="#link">sitemap</a></li>
+                  <li class="nav-item bottom-nav-item"><a href="#link">contact</a></li>
+              </ul>
+            </nav>
+            
+          </div>
+          <div class="colophon col-md-6">
+              <p class="colophon-text">&copy; 2021 &middot; All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+    <symbol id="icon-phone" viewBox="0 0 32 32">
+      <path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"></path>
+      </symbol>
 </body>
 </html>
