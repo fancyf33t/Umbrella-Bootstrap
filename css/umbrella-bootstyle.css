@@ -35,8 +35,8 @@
     --prim: #a0c63f;
     --sec: #e5e5e5;
     --tert: #ffff;
-    --headerFont: font-family: 'Spartan', sans-serif;
-    --textFont: font-family: 'Roboto', sans-serif;
+    --headerFont: 'Spartan', sans-serif;
+    --textFont: 'Roboto', sans-serif;
 }
 a {
     text-decoration: none;
