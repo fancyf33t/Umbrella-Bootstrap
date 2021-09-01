@@ -1,22 +1,31 @@
-.umbrella-logo, .device-page {
-    width: 100%;
-}
+/* .umbrella-logo, .device-page {
+    width: 50%;
+} */
 
-.return-to-top {
-    border: 1px solid green;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    padding: 10px;
-}
 
-.icon {
+.icon, .icon-recycle {
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 10em;
+    height: 10em;
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
+    border: 15px solid white;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: var(--prim);
+}
+#return-button {
+    width: 3em;
+    height: 3em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    border: 1px solid var(--prim)
+    border-radius: 50%;
+    padding: 10px;
+    padding-top: 3px;
+    background-color: var(--prim);
 }
 
 
@@ -26,14 +35,41 @@
     --prim: #a0c63f;
     --sec: #e5e5e5;
     --tert: #ffff;
+    --headerFont: font-family: 'Spartan', sans-serif;
+    --textFont: font-family: 'Roboto', sans-serif;
 }
-
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    transition: 1.5s;
+    color: silver;
+}
+body {
+    background-color: rgb(236, 236, 236);
+}
+button {
+    background-color: var(--prim);
+    color: white;
+    text-transform: capitalize;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: silver;
+    transition: 1.5s ease;
+}
+* {
+    scroll-behavior: smooth;
+}
 /* CLOSE GENERAL RULES */
 
 /* HEADER */
 .logo {
     font-size: calc(15px + 8 * ((100vw - 320px) / 680));
+    font-family: var(--headerFont);
 }
+
 .graphics_word {
     color: var(--prim);
 }
@@ -42,7 +78,6 @@
 }
 .top-nav-item {
     text-transform: uppercase;
-    
 }
 
 /* CLOSE HEADER */
@@ -51,7 +86,49 @@
 .landing-page {
     background-color: var(--prim);
 }
+.lovely-words {
+    border: 1px solid purple;
+    height: fit-content;
+    text-transform: uppercase;
+    color: white;
+}
+
+#elegantica, #portfolio, #advertisers {
+    color: silver;
+}
+
+.main-content-sub1, .main-content-sub2, .main-content-sub3 {
+    text-transform: uppercase;
+}
+.advertiser-banner, .portfolio-block, .icon-block {
+    border-top: 2px dashed gray;
+    padding-top: 20px;
+}
 /* CLOSE MAIN */
 
 /* FOOTER */
+.footer {
+    background-color: white;
+}
+.social-feed {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    color: dimgrey;
+}
+
+.archive-year {
+    border-bottom: 1px dashed silver;
+}
+.archive-hyperlinks {
+    color: black;
+    text-transform: capitalize;
+}
+.colophon {
+    color: white;
+    background-color: black;
+}
 /* CLOSE FOOTER */
